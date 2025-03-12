@@ -1,116 +1,92 @@
-body {
-    font-family: "Poppins", sans-serif;
-    background-color: #eef1f7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+/* Reset mặc định của trình duyệt */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Căn giữa và thêm padding */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #007bff;
+    color: white;
     padding: 20px;
 }
 
-.cv-container {
-    display: flex;
-    max-width: 800px;
-    width: 100%;
-    background: white;
-    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.2);
-    border-radius: 12px;
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out;
-}
-
-.cv-container:hover {
-    transform: scale(1.02);
-}
-
-.cv-left {
-    width: 35%;
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
-    color: white;
-    text-align: center;
-    padding: 30px 15px;
-}
-
-.cv-left img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 15px;
-    border: 4px solid white;
-}
-
-.cv-left h1 {
-    font-size: 22px;
-    font-weight: bold;
+header h1 {
     margin-bottom: 10px;
 }
 
-.cv-left p {
-    font-size: 13px;
-    opacity: 0.9;
-}
-
-.cv-left .contact-info, 
-.cv-left .skills, 
-.cv-left .awards, 
-.cv-left .interests {
-    text-align: left;
-    margin-top: 15px;
-    padding: 8px;
-}
-
-.cv-left h3 {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 8px;
-    border-bottom: 2px solid #ffcc29;
-    display: inline-block;
-    padding-bottom: 4px;
-}
-
-.cv-left ul {
+/* Thanh điều hướng */
+nav ul {
     list-style: none;
     padding: 0;
 }
 
-.cv-left ul li {
-    font-size: 13px;
-    margin: 4px 0;
-    opacity: 0.8;
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-.cv-right {
-    width: 65%;
-    padding: 30px;
-}
-
-.cv-right h2 {
-    color: #1e3c72;
-    font-size: 18px;
+nav ul li a {
+    color: white;
+    text-decoration: none;
     font-weight: bold;
-    margin-bottom: 12px;
-    border-bottom: 3px solid #1e3c72;
-    display: inline-block;
-    padding-bottom: 4px;
 }
 
-.cv-right p, 
-.cv-right ul {
-    font-size: 13px;
-    color: #444;
-    margin: 4px 0;
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
-.cv-right ul {
-    padding-left: 15px;
+/* Phần hồ sơ cá nhân */
+.profile {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.cv-right .section {
+.profile img {
+    border-radius: 50%;
     margin-bottom: 15px;
-    padding: 10px;
-    background: #f8f9fa;
-    border-left: 4px solid #1e3c72;
-    border-radius: 6px;
+}
+
+/* Các phần nội dung */
+section {
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Danh sách kỹ năng và sở thích */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 8px;
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    background: #007bff;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
 }
